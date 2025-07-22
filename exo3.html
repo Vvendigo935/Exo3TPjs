@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP DOM</title>
+</head>
+<body>
+    <main id="formulaire">
+      <h1>SUPER SMASH BROS M2I</h1>
+  
+      <p id="description" class="description"></p>
+      <button id="change-desc">Changer de description</button>
+  
+      <div class="champ">
+        <label for="pseudo">Pseudo :</label>
+        <input type="text" id="pseudo" placeholder="Entrez votre pseudo"/>
+        <span id="pseudo-error" class="error"></span>
+      </div>
+  
+      <div class="avatars">
+        <p>Choisissez votre combattant !! :</p>
+        <div class="avatar-list">
+          <img src="sarko.jpg" alt="Avatar 1" class="avatar" data-avatar="1" id="avatar1"/>
+          <sub class="descriptionAvatar">NICOLAS SARKOZY - EX PRESIDENT DE LA REPUBLIQUE</sub>
+          <img src="ribery.jpg" alt="Avatar 2" class="avatar" data-avatar="2" id="avatar2"/>
+          <sub class="descriptionAvatar">FRANK RIBERY - LEGENDE DU BAYERN, NE PAS PAYER SON SALAIRE EN LIVRE STERLING !</sub>
+          <img src="pascal.webp" alt="Avatar 3" class="avatar" data-avatar="3" id="avatar3"/>
+          <sub class="descriptionAvatar">PASCAL LEGITIMUS - L'INCONNUS</sub>
+          <img src="JCVD.webp" alt="Avatar 4" class="avatar" data-avatar="4"/>
+          <sub class="descriptionAvatar">JEAN CLAUDE VAN DAMME - J'ADORE L'EAU : DANS 20/30 ANS Y EN AURA PU !!</sub>
+          <img src="olivierVincentLetang.jpg" alt="Avatar 5" class="avatar" data-avatar="5"/>
+          <sub class="descriptionAvatar">OLIVIER LETANG - PRESIDENT DU LOSC EN FORMATION JAVA A M2I</sub>
+          <img src="niney.webp" alt="Avatar 6" class="avatar" data-avatar="6"/>
+          <sub class="descriptionAvatar">PIERRE NINEY - LEO LUI RESSEMBLE BEAUCOUP</sub>
+          <img src="saitama.webp" alt="Avatar 7" class="avatar" data-avatar="7"/>
+          <sub class="descriptionAvatar">CHRISTOPHE (POINT VIRGULE MAN) - LES SIGNATURES SONT LANCEE !!</sub>
+          <img src="josefonte.jpg" alt="Avatar 8" class="avatar" data-avatar="8"/>
+          <sub class="descriptionAvatar">JOSE FONTE - UN AUTRE DU LOSC EN FORMATION A M2I</sub>
+          <img src="shia.jpg" alt="Avatar 9" class="avatar" data-avatar="9"/>
+          <sub class="descriptionAvatar">SHIA LABEOUF - EN FORMATION A M2I POUR REPROGRAMMER LES DECEPTICON</sub>
+          <img src="bachar.jfif" alt="Avatar 10" class="avatar" data-avatar="10"/>
+          <sub class="descriptionAvatar">BACHAR - DESTITUER DU POUVOIR, IL TENTE DE LE REPRENDRE ICI A VILLENEUVE D'ASCQ !</sub>
+          <img src="gabJesus.jpg" alt="Avatar 11" class="avatar" data-avatar="11"/>
+          <sub class="descriptionAvatar">GABRIEL JESUS - TOUT EST DANS LE NOM, VOUS ALLEZ RETROUVER LA FOI !</sub>
+          <img src="locatelli.png" alt="Avatar 12" class="avatar" data-avatar="12"/>
+          <sub class="descriptionAvatar">MANUEL LOCATELLI - CHAMPION D'EUROPE AVEC L'ITALIE, POURTANT ON A L'IMPRESSION QU'ON VA FAIRE DU FIGMA</sub>
+
+
+
+
+
+        </div>
+      </div>
+  
+      <button id="suivant" disabled>Suivant</button>
+    </main>
+  
+    <section id="profil" class="hidden">
+      <div class="card">
+        <img id="profil-avatar" src="" alt="Avatar sélectionné"/>
+        <h2 id="profil-pseudo"></h2>
+        <p id="profil-description"></p>
+        <button id="reset">Recommencer</button>
+      </div>
+    </section>
+  
+    <footer>
+      <button id="toggle-theme">Changer de thème</button>
+    </footer>
+  
+    <script src="exo3.js"></script>
+  </body>
+  </html>
+  
